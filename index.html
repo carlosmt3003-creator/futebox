@@ -1344,38 +1344,7 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 //# sourceURL=https://futemax.cfd/wp-includes/js/wp-emoji-loader.min.js
 /* ]]> */
 </script>
-<script>
-(function () {
 
-  function loadPop() {
-    var s = document.createElement('script');
-    s.src = 'https://acscdn.com/script/aclib.js';
-    s.async = true;
-
-    s.onload = function () {
-      if (typeof aclib !== "undefined") {
-        aclib.runPop({
-          zoneId: '9704634'
-        });
-      }
-    };
-
-    document.body.appendChild(s);
-  }
-
-  // pega horário do BR (São Paulo)
-  var nowBR = new Date().toLocaleString("en-US", {
-    timeZone: "America/Sao_Paulo"
-  });
-
-  var hour = new Date(nowBR).getHours();
-
-  // das 12:00 até 23:59
-  if (hour >= 9 && hour <= 23) {
-    loadPop();
-  }
-
-})();
-</script>
 
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"c42fe9bbdb864d76acbfa99f992d999c","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+vvv
